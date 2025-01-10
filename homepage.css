@@ -1,0 +1,739 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+/* Header & Nav Bar */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+    background-color: whitesmoke;
+    background-size: cover;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 8px;
+    position: relative;
+}
+
+#navbar li a{
+    padding: 10px;
+    background-color: pink;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    transition: 0.2s ease;
+}
+
+#navbar li a:hover{
+    color: pink;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: gray;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: purple;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+/* Home Page */
+#mainpage{
+    background-image: url('img/trybg.png');
+    width: 100%;
+    height: 85vh;
+    background-size: cover;
+    background-position: top 25% right 0;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 35px;
+    border-radius: 4px;
+}
+
+h4{
+    font-size: 45px;
+    color:black;
+    background-color: white;
+    padding: 2px;
+    border-radius: 15px;
+    font-weight: bold;    
+}
+
+#mainpage img{
+    text-align: center;
+}
+
+#mainpage p{
+    font-size: 18px;
+    font-weight: 800;
+    color: purple;  
+    
+    padding: 2px;
+    border-radius: 15px;  
+}
+
+#mainpage a{
+    text-align: center;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #1c2833;
+}
+
+#mainpage ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px;
+    transition: 0.3s ease;
+}
+
+#mainpage ul li a{
+    transition: 0.3s ease;
+}
+
+#mainpage ul li a:hover{
+    color: yellow;
+}
+
+.divider{
+    color: black;
+    background-color: whitesmoke;
+}
+
+#home{
+    background-size: cover;
+    background-image: url('img/yonsei.jpg');
+}
+
+.companymotto{
+    text-align: center;
+    color: #CBC3E3;
+    background-color: black;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 6px;
+}
+
+.companymotto h2{
+    color: cyan;
+}
+
+.companymotto h3{
+    color: blue;
+}
+
+.topsalesclass{
+    text-align: center;
+    background-color: pink;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.topsalesclass p{
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+}
+.topsales p{
+    color: black;
+    font-size: 65px;
+    padding: 5px;
+}
+
+.ff{
+    width: 100%;
+    height: 10vh;
+    padding: 30px 0px 170px;
+    text-align: center;
+
+}
+
+nav2 a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: grey;
+    padding: ;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+nav2 ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px;
+}
+
+nav2 ul li a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: grey;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+.productcategoriesclass{
+    width: 100%;
+    height: 0;
+    background-color: pink;
+    padding: 10px 10px 140px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+nav3 a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: grey;
+    padding: px;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+nav3 ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px;
+}
+
+.productcategoriesclass2{
+    width: 100%;
+    height: 0;
+    background-color: pink;
+    padding: 10px 10px 140px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+nav4 a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: grey;
+    padding: px;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+nav4 ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px;
+}
+
+#home{
+    background-color: white;
+}
+
+.categories{
+    padding: 7px;
+    border: 1px solid  black;
+    text-align: center;
+    color: black;
+    background-color: whitesmoke;
+}
+
+.categories p{
+    color: black;
+    font-size: 40px;
+}
+
+#thirdmain{
+    background-color: pink;
+    width: 100%;
+    height: 1vh;
+    background-size: cover;
+    background-position: top 25% right 0;
+    align-content: center;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid white;
+    outline: none;
+    transition: 0.2s;
+}
+
+body{
+    width: 100%;
+}
+
+.categoriesclass{
+    background-size: cover;
+    background-image: url('img/homepagebg.jpg');
+    width: 100%;
+    height: 58vh;
+}
+.ca-box{
+    background-color:  white;
+}
+
+#category{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#category .ca-box{
+    width: 180px;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    padding: 20px 10px;
+    background-color: white;
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.2);
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+
+#category .ca-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#category .ca-box h6{
+    display:inline-block;
+    padding: 9px 8px 12px 8px;
+    line-break: 1;
+    color: black;
+    background-color: pink;
+    border-radius: 7px;
+}
+
+#category .ca-box h6:hover{
+    box-shadow: 10px 10px 45px grey;
+}
+
+.features{
+    padding: 10px;
+    border: 1px solid  black;
+    text-align: center;
+    color: black;
+    background-color: whitesmoke;
+}
+
+.features p{
+    color: black;
+    font-size: 45px;
+}
+.section-p2{
+    padding: 30px 90px;
+}
+
+body{
+    width: 100%;
+}
+
+.featuresclass{
+    background-size: cover;
+    background-image: url('img/pastel2.png');
+    width: 100%;
+    height: 135vh;
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('img/banner.png');
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h1{
+    color: #fff;
+    font-size: 40px;
+    padding: 10px;
+}
+
+#banner h1 span{
+    color: #ef3636;
+}
+
+#banner button:hover{
+    background: pink;
+    color: black;
+}
+
+.new p{
+    padding: 20px;
+    background-image: url('img/homepagebg.jpg');
+    text-align: center;
+    font-size: 35px;
+    font-weight: 0;
+    color: black;
+}
+
+#product1{
+    text-align: center; 
+    font-size: 25px ;
+}
+
+#product1 p{
+    padding: 2px;
+    background-color: whitesmoke;
+    color: black;
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro{
+    width: 15%;
+    min-width: 200px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 1px 2px 3px 8px rgba(0,0,0,0.09);
+    margin: 15px 0 ;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .pro img{
+    width: 170px;
+    height: 170px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+#product1 .pro img:hover{
+    box-shadow: 1px 2px 3px 8px rgba(219, 109, 192, 0.2);
+}
+
+#product1 .pro  li{
+    list-style: none;
+}
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span{
+    color: yellowgreen;
+    font-size: 12px;
+    padding: 5px;
+    background-color: black;
+    border-radius: 2px;
+}
+
+#product1 .pro .des h6{
+    padding-top: 7px;
+    color: black;
+    font-size: 17px;
+    text-align: left;
+}
+
+#product1 .pro .des i{
+    font-size: 17px;
+    padding: 0 0 20px;
+    color: rgb(243,181,25);
+}
+
+#product1 .pro .des h5{
+    background-color: pink;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    border: 1px solid black;
+    background-color: lightgray;
+    font-weight: 500;
+    color: black;
+    position: absolute;
+    bottom: 20px;
+    right: 5px;
+    
+}
+
+#product1 .pro .cart:hover{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+
+
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url('img/palace2.jpg');
+    min-width: 580px;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+#sm-banner h3{
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#sm-banner h2{
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+#sm-banner span{
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    padding-bottom: 15px;
+}
+
+#sm-banner .banner-box:hover button{
+    background-color: pink;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url('images/pet4');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #000;
+}
+
+#newsletter h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+}
+
+#newsletter p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+#newsletter p span{
+    color: red;
+}
+
+#newsletter .form{
+    display: flex;
+    width: 41%;
+}
+
+#newsletter form {
+    display: flex;
+    width: 100%;
+}
+
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter button{
+     background-color: gray;
+     color: white;
+     white-space: nowrap;
+     font-size: 15px;
+     border-top-left-radius: 0;
+     border-bottom-left-radius: 0;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo{
+    margin-bottom: 30px;
+}
+
+footer h3{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+}
+
+footer .follow{
+    margin-top: 20px;
+}
+
+footer .install .row img{
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover {
+    color: pink;
+}
+
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width:799px){
+    #navbar {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        background-color: pink;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 17px 0 0 17px;      
+    }
+
+    #navbar:hover{
+        right: -0px;
+        transition: 0.5s;
+        display: inline-block;
+        overflow: visible;
+    }
+
+    .categoriesclass{
+        background-size: cover;
+        width: 100%;
+        height: 150vh;
+    }
+
+    #category{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .features p{
+        font-size: 40px;
+    }
+
+    .featuresclass{
+        background-size: cover;
+        width: 100%;
+        height: 320vh;
+    }
+
+    #newsletter .form{
+        display: flex;
+        width: 92%;
+    }
+
+   
+}

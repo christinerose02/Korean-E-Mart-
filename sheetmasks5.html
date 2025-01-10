@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="sproducts2.css">
+    <title>Korean E-Mart | Sheet Mask</title>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="img/websitelogo.png" class="logo" alt="" width="100px" height="100px"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="logsign.html">Log In</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a class="active" href="products.html">Products</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+                <li><a href="mycart.html">My Cart</i></a></li>
+            </ul>
+        </div>
+    </section><br>
+
+    <section id="categories">
+        <div>
+            <ul id="category">
+                <li><a href="koreanclothings.html">Korean Clothings</a></li> 
+                <li><a href="koreanshoes.html">Korean Shoes</a></li> 
+                <li><a href="koreanfoods.html">Korean Foods</a></li> 
+                <li><a href="koreanmerch&albums.html">Korean Merch & Albums</a></li> 
+                <li><a class="active" href="koreanskincare.html">Korean Skin Care Products</a></li> 
+            </ul>
+        </div>
+    </section><br>
+
+    <section id="albumcategories">
+        <div>
+            <ul id="albumcategory">&nbsp;
+                <li><a class= "active" href="sheetmasks.html">|Sheet Mask|</a></li> 
+                <li><a href="toners.html">|Toner|</a></li> 
+                <li><a href="moisturizer.html">|Moisturizer|</a></li> 
+                <li><a href="foamwash.html">|Foam Wash|</a></li>
+                <li><a href="cream.html">|Cream|</a></li>
+                <li><a href="lotionscrub.html">|Body Lotion & Scrub|</a></li> 
+                <li><a href="mist.html">|Facial Mist|</a></li>
+                <li><a href="remover.html">|MakeUp Remover|</a></li> 
+            </ul>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/mask5.jpg" id="MainImg" alt="Brightening Lemon" style="width:100%">
+        </div>
+        
+
+        <div class="single-pro-details">
+            <h6>K o r e a n&nbspS k i n c a r e&nbspP r o d u c t s</h6>
+            <h4>Brightening Lemon</h4>
+            <div class = "des">
+                <div class = "star">
+                    <i class ="fa fa-star"></i>
+                    <i class ="fa fa-star"></i>
+                    <i class ="fa fa-star"></i>
+                    <i class ="fa fa-star"></i>
+                    <i class ="fa fa-star"></i>
+                </div>
+            </div>
+            <h2>Php 50.00</h2><br>
+          
+            <input type="number" value="1">
+            <button class="normal">Add to Cart</button><br>
+            <h4>Product Details</h4>
+            <span>Lemon juice naturally contains vitamin C, an antioxidant that may 
+            help reduce skin damage and premature aging. Due to its high pH levels, 
+            lemon can decrease oil on the skin and reduce inflammation.</span>
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+        
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("MainImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+    </script>
+
+    </section>
+
+    <section id="product1" class="section-p2">
+        <div class="pro-container">
+            <div class="pro">
+                <li><a href="sheetmasks1.html"><img src = "img/mask1.jpg" alt="kc1"></a></li>
+                <div class = "des">
+                    <span>marjchel</span>
+                    <h6>Ice Cooling Mask</h6>
+                    <div class = "star">
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                    </div>
+                        <h5>Php 70.00</h5>
+                </div>
+                <a href = "mycart.html"><i class = "fa fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <li><a href="sheetmasks2.html"><img src = "img/mask2.jpg" alt="Tomato Glass Skin"></a></li>
+                <div class = "des">
+                    <span>marjchel</span>
+                    <h6>Tomato Glass Skin</h6>
+                    <div class = "star">
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                    </div>
+                        <h5>Php 70.00</h5>
+                </div>
+                <a href = "mycart.html"><i class = "fa fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <li><a href="sheetmasks3.html"><img src = "img/mask3.jpg" alt="kc3"></a></li>
+                <div class = "des">
+                    <span>marjchel</span>
+                    <h6>Glutaboost</h6>
+                    <div class = "star">
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                    </div>
+                        <h5>Php 70.00</h5>
+                </div>
+                <a href = "mycart.html"><i class = "fa fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <li><a href="sheetmasks4.html"><img src = "img/mask4.jpg" alt="kc4"></a></li>
+                <div class = "des">
+                    <span>marjchel</span>
+                    <h6>CalmingTeaTreeOil</h6>
+                    <div class = "star">
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                    </div>
+                        <h5>Php 50.00</h5>
+                </div>
+                <a href = "mycart.html"><i class = "fa fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <li><a href="sheetmasks5.html"><img src = "img/mask5.jpg" alt="kc5"></a></li>
+             <div class = "des">
+                 <span>marjchel</span>
+                 <h6>Brightening Lemon</h6>
+                 <div class = "star">
+                     <i class ="fa fa-star"></i>
+                     <i class ="fa fa-star"></i>
+                     <i class ="fa fa-star"></i>
+                     <i class ="fa fa-star"></i>
+                     <i class ="fa fa-star"></i>
+                 </div>
+                     <h5>Php 50.00</h5>
+             </div>
+             <a href = "mycart.html"><i class = "fa fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+    </section>
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h3>Sign up for Newsletter</h3>
+            <p>Get E-mail updates about our latest shop and <span>special offers</span>.</p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+   </section>
+
+   <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/final1.png" alt="websitelogo" width="120px">
+            <h3>Contact</h3>
+            <p><strong>Address:</strong>Lamacan, Argao, Cebu</p>
+            <p><strong>Phone:</strong>09924345671</p>
+            <p><strong>Hours:</strong>9:00AM-11:00PM Mon-Sun</p>
+            <div class="follow"><br>
+                 <h3>Follow us</h3>
+                 <div class="icon">
+                    <i class="fa fa-facebook-f"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-pinterest"></i>
+                    <i class="fa fa-youtube"></i>
+                 </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h3>About</h3>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Primary Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact us</a>
+        </div>
+
+        <div class="col">
+            <h3>My Account</h3>
+            <a href="#">Sign in</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h3>Install App</h3>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/ios.png" alt="" width="100px">
+                <img src="img/android.png" alt="" width="87.5px">
+            </div><br>
+            <p>Secured Payments Gateaway</p>
+            <img src="img/visa.png" alt="" width="50px">
+            <img src="img/mastercard.png" alt="" width="40px">
+            <img src="img/gcash.png" alt="" width="80px">
+        </div>
+        
+        <div class="copyright">
+            <p>@ 2022,  P-Elec 2 - Korean E Mart | Ecommerce Website</p>
+        </div>
+   </footer>
+</body>
+</html>

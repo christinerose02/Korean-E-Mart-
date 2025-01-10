@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="sproducts2.css">
+    <title>Korean E-Mart | Enhypen</title>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="img/websitelogo.png" class="logo" alt="" width="100px" height="100px"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="homepage.html"><i class="far fa-home"></i></a></li>
+                <li><a href="logsign.html"><i class="far fa-user"></i></a></li>
+                <li><a class="active" href="products.html"><i class="far fa-store"></i></a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</i></a></li>
+                <li><a href="mycart.html"><i class="far fa-shopping-bag"></i></a></li>
+            </ul>
+        </div>
+    </section><br>
+
+    <div class="banner">
+        <section>
+            <img class="mySlides" src="img/banner1.png" > 
+            <img class="mySlides" src="img/banner2.png" > 
+            <img class="mySlides" src="img/banner3.png" > 
+            <img class="mySlides" src="img/banner4.png" > 
+            <img class="mySlides" src="img/banner5.png" > 
+        </section>
+        <script>
+            var myIndex = 0;
+            carousel();
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}
+                x[myIndex-1].style.display = "block";
+                setTimeout(carousel, 3000);
+                }
+            </script>
+    </div><br>
+
+    <section id="categories">
+        <div>
+            <ul id="category">
+                <li><a href="koreanclothings.html">Korean Clothings</a></li> 
+                <li><a href="koreanshoes.html">Korean Shoes</a></li> 
+                <li><a href="koreanfoods.html">Korean Foods</a></li> 
+                <li><a a class="active" href="koreanmerch&albums.html">Korean Merch & Albums</a></li> 
+                <li><a href="koreanskincare.html">Korean Skin Care Products</a></li> 
+            </ul>
+        </div>
+    </section><br>
+
+    <section id="albumcategories">
+        <div>
+            <ul id="albumcategory">&nbsp;
+                <li><a href="bts.html">|BTS|</a></li> 
+                <li><a class="active" href="enhypen.html">|Enhypen|</a></li> 
+                <li><a href="txt.html">|TXT|</a></li> 
+                <li><a href="seventeen.html">|Seventeen|</a></li>
+                <li><a href="treasure.html">|Treasure|</a></li>
+                <li><a href="newjeans.html">|NewJeans|</a></li> 
+                <li><a href="lesserafim.html">|Lesserafim|</a></li> 
+                <li><a href="sunmi.html">|SUNMI|</a></li> 
+                <li><a href="fromis9.html">|Fromis9|</a></li> 
+                <li><a href="henry.html">|HENRY|</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/border.jpg" id="MainImg" alt="BORDER:CARNIVAL" style="width:100%">
+        </div>
+        
+
+        <div class="single-pro-details">
+            <h6>K o r e a n&nbspA l b u m s</h6>
+            <h4>BORDER:CARNIVAL</h4>
+            <div class = "des">
+                <div class = "star">
+                    <i class ="fa fa-star"></i>
+                    <i class ="fa fa-star"></i>
+                    <i class ="fa fa-star"></i>
+                    <i class ="fa fa-star"></i>
+                    <i class ="fa fa-star"></i>
+                </div>
+            </div>
+            <h2>Php 2700.00</h2><br>
+            
+            <input type="number" value="1">
+            <button class="normal">Add to Cart</button><br>
+            <h4>Product Details</h4>
+            <span>Border: Carnival is the second extended play by South Korean 
+            boy band Enhypen. It was released on April 26, 2021, through Belift Lab. 
+            The album consists of six tracks, including the lead single "Drunk-Dazed".</span>
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+        
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("MainImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+    </script>
+
+    </section>
+
+    <section id="product1" class="section-p2">
+        <div class="pro-container">
+            <div class="pro">
+                <li><a href="enhypen1.html"><img src = "img/border.jpg" alt="kc1"></a></li>
+                <div class = "des">
+                    <span>marjchel</span>
+                    <h6>BORDER:CARNIVAL</h6>
+                    <div class = "star">
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                    </div>
+                        <h5>Php 2700.00</h5>
+                </div>
+                <a href = "mycart.html"><i class = "fa fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <li><a href="enhypen2.html"><img src = "img/border1.jpg" alt="kc2"></a></li>
+                <div class = "des">
+                    <span>marjchel</span>
+                    <h6>BORDER:DAY ONE</h6>
+                    <div class = "star">
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                    </div>
+                        <h5>Php 1000.00</h5>
+                </div>
+                <a href = "mycart.html"><i class = "fa fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <li><a href="enhypen3.html"><img src = "img/dimension1.jpg" alt="kc3"></a></li>
+                <div class = "des">
+                    <span>marjchel</span>
+                    <h6>DIMENSION:DILEMMA</h6>
+                    <div class = "star">
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                    </div>
+                        <h5>Php 2800.00</h5>
+                </div>
+                <a href = "mycart.html"><i class = "fa fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <li><a href="enhypen4.html"><img src = "img/dimension2.jpg" alt="kc4"></a></li>
+                <div class = "des">
+                    <span>marjchel</span>
+                    <h6>DIMENSION:ANSWER</h6>
+                    <div class = "star">
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                        <i class ="fa fa-star"></i>
+                    </div>
+                        <h5>Php 2000.00</h5>
+                </div>
+                <a href = "mycart.html"><i class = "fa fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <li><a href="enhypen5.html"><img src = "img/dimension3.jpg" alt="kc5"></a></li>
+             <div class = "des">
+                 <span>marjchel</span>
+                 <h6>DIMENSION(set)</h6>
+                 <div class = "star">
+                     <i class ="fa fa-star"></i>
+                     <i class ="fa fa-star"></i>
+                     <i class ="fa fa-star"></i>
+                     <i class ="fa fa-star"></i>
+                     <i class ="fa fa-star"></i>
+                 </div>
+                     <h5>Php 2800.00</h5>
+             </div>
+             <a href = "mycart.html"><i class = "fa fa-shopping-cart cart"></i></a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h3>Sign up for Newsletter</h3>
+            <p>Get E-mail updates about our latest shop and <span>special offers</span>.</p>
+        </div>
+        <div class="form">
+            <input type="email" class="input-field" placeholder="Your email address" required>
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+    
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/final1.png" alt="websitelogo" width="120px">
+            <h3>Contact</h3>
+            <p><strong>Address:</strong>Lamacan, Argao, Cebu</p>
+            <p><strong>Phone:</strong>09162859403</p><br>
+            <p><strong>Open Hours:</strong></p>
+              <p><strong>WEEKDAYS:</strong>7:00AM-7:00PM</p>
+              <p><strong>WEEKENDS:</strong>9:00AM-6:00PM</p>
+            <div class="follow"><br>
+                 <h3>Follow us</h3>
+                 <div class="icon">
+                    <img src="img/facebook.png" alt="" width="20px">
+                    <img src="img/instagram.png" alt="" width="20px">
+                    <img src="img/twitter.png" alt="" width="20px">
+                 </div>
+            </div>
+        </div>
+    
+        <div class="col">
+            <h3>About</h3>
+            <a href="aboutus.html">About us</a>
+            <a href="primarypolicy.html">Privacy Policy</a>
+            <a href="termsconditions.html">Terms & Conditions</a>
+            <a href="contactus.html">Contact us</a>
+        </div>
+    
+        <div class="col">
+            <h3>My Account</h3>
+            <a href="logsign.html">Sign in</a>
+            <a href="mycart.html">View Cart</a>
+            <a href="mycart.html">My Wishlist</a>
+            <a href="mycart.html">Track My Order</a>
+            <a href="primarypolicy.html">Help</a>
+        </div>
+    
+        <div class="col install">
+            <h3>Install App</h3>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/ios.png" alt="" width="70px">
+                <img src="img/android.png" alt="" width="65px">
+            </div><br>
+            <p>Secured Payments Gateaway</p>
+            <img src="img/visa.png" alt="" width="30px">
+            <img src="img/mastercard.png" alt="" width="20px">
+            <img src="img/gcash.png" alt="" width="60px">
+        </div>
+        
+        <div class="copyright">
+            <p>@2022-2023, Korean E-Mart | E-Commerce Website</p>
+        </div>
+    </footer>
+</body>
+</html>

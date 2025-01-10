@@ -1,0 +1,133 @@
+<html>
+<head>
+    <title>Korean E-Mart | My Account</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="logsign.css">
+    <script src ="path/to/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="homepage.js"></script>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="img/websitelogo.png" class="logo" alt="" width="100px" height="100px"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="homepage.html"><i class="far fa-home"></i></a></li>
+                <li><a href="logsign.html"><i class="far fa-user"></i></a></li>
+                <li><a href="products.html"><i class="far fa-store"></i></a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</i></a></li>
+                <li><a href="mycart.html"><i class="far fa-shopping-bag"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+        <div class = "hero">
+            <div class= "form-box">
+                <div class="button-box">
+                    <div  id="btn"> </div>
+                    <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                    <button type="button" class="toggle-btn" onclick="signup()">Sign Up</butto>
+                </div>
+                <div class="social-icons">
+                <a href=""><img src="img/facebook.png"></a>
+                <a href=""><img src="img/google.png"></a>
+                <a href=""><img src="img/instagram.png"></a>
+                <a href=""><img src="img/twitter.png"></a>
+            </div>
+            <form id="login" class="input-group"> 
+                <input type="email" class="input-field" placeholder="Email Address" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>  
+                <input type="checkbox" class="chech-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+
+            <script>
+                $(document).ready(function(){
+                    $("#login").click(function(){
+                    alert("Congratulations! LOG-IN BUTTON was clicked!");
+                });
+                });
+            </script>
+
+            <form id="signup" class="input-group"> 
+                <input type="email" class="input-field" placeholder="Email Address" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>  
+                <input type="checkbox" class="chech-box"><span>I agree to the terms & conditions</span>
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+            </div>
+
+            <script>
+                $(document).ready(function(){
+                $("#signup").click(function(){
+                alert("Congratulations! SIGN-UP BUTTON was clicked!");
+                });
+                });
+            </script>
+            
+        </div>
+
+        <script>
+        var x =  document.getElementById("login");
+        var y =  document.getElementById("signup");
+        var z =  document.getElementById("btn");
+        
+        function signup(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+            
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+        </script>
+            <section id="form-container">
+                <div class="header">
+                    <h1>Create Account</h1>
+                </div>
+        
+                <form class="form" id="form">
+                    <div class="form-control">
+                        <label>Username</label>
+                        <input type="text" placeholder="Username" id="username">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+        
+                    <div class="form-control">
+                        <label >Email Address</label>
+                        <input type="email" placeholder="Email Address" id="email">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+        
+                    <div class="form-control">
+                        <label >Password</label>
+                        <input type="password" placeholder="Password" id="password">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+        
+                    <div class="form-control">
+                        <label >Confirm Password</label>
+                        <input type="password" placeholder="Confirm Password" id="password2">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <button>Submit</button>
+                </form>
+            </section>
+</body>
+</html>
